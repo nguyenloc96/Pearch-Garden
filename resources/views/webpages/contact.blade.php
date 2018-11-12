@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'CONTACT｜paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/contact.css') !!}" rel="stylesheet">
@@ -25,7 +25,7 @@
                 <div class="form-ctnr">
                     <h1 class="header">CONTACT</h1>
                     <p class="sub-header">お問い合わせ</p>
-                    <p class="sub-txt"><span class="en-st">paters</span>への各種お問い合わせは<br>こちらより承っています。</p>
+                    <p class="sub-txt"><span class="en-st">Peach Garden</span>への各種お問い合わせは<br>こちらより承っています。</p>
                     <p class="sb-note">※の項目は必須項目です。</p>
                     <div class="line"></div>
                     <div class="error-wrp sub-txt">
@@ -55,9 +55,9 @@
                         </p>
                         <p class="p-ctnr">
                             <select class="type" id="type" name="contact_category"><option value="">*お問い合わせの種類を入力してください</option>
-                                <option value="patersへの取材依頼">patersへの取材依頼</option>
+                                <option value="Peach Gardenへの取材依頼">Peach Gardenへの取材依頼</option>
                                 <option value="サービス内容について">サービス内容について</option>
-                                <option value="patersでのトラブルについて">patersでのトラブルについて</option>
+                                <option value="Peach Gardenでのトラブルについて">Peach Gardenでのトラブルについて</option>
                                 <option value="サービスへのログイン・購入について">サービスへのログイン・購入について</option>
                                 <option value="その他ご意見・ご質問など">その他ご意見・ご質問など</option>
                             </select>

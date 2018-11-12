@@ -26,11 +26,11 @@
     </nav>
     <div class="ftr-ftr">
         <p class="ftr-ftr-logo">
-            <img src="/assets/image/paters-heart_logo_gl@3x.png" alt="paters">
+            <img src="/assets/image/favicon.ico" style="height: 30px;" alt="Peach Garden">
         </p>
         <p class="ftr-ftr-accession">インターネット異性紹介事業 届出済み
         <br>(受理番号: 30170022000)
         </p>
-        <p class="ftr-ftr-copyright">&#169;2017 paters, inc All Rights Reserved.</p>
+        <p class="ftr-ftr-copyright">&#169;2017 Peach Garden Project, inc All Rights Reserved.</p>
     </div>
 </footer>

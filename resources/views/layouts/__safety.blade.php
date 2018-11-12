@@ -149,7 +149,7 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
                 <h2 class="font-300">安心・安全の取り組み</h2>
-                <p class="text-muted mt-4 title-subtitle mx-auto">paters(ペイターズ)では、すべての会員の皆様が心から安心してアプリを利用いただくために、様々な取り組みを行っております。これらの取り組みは日々アップデートされており、ここに紹介されているのはその一部にしか過ぎません。</p>
+                <p class="text-muted mt-4 title-subtitle mx-auto">Peach Garden(ペイターズ)では、すべての会員の皆様が心から安心してアプリを利用いただくために、様々な取り組みを行っております。これらの取り組みは日々アップデートされており、ここに紹介されているのはその一部にしか過ぎません。</p>
             </div>
         </div>
         <div class="timeline-page mt-5">
@@ -163,7 +163,7 @@
                     <div class="col-lg-6">
                         <div class="works works-description-right">
                             <h4>24時間 365 日の監視体制</h4>
-                            <p class="timeline-subtitle">patersでは、ユーザー様のすべての投稿（プロフィール画像、自己紹介文等）について、投稿時に事前審査を行い、不適切な書き込みがないことを24時間365日の監視体制で確認し、トラブルになることを未然に防ぎます。</p>
+                            <p class="timeline-subtitle">Peach Gardenでは、ユーザー様のすべての投稿（プロフィール画像、自己紹介文等）について、投稿時に事前審査を行い、不適切な書き込みがないことを24時間365日の監視体制で確認し、トラブルになることを未然に防ぎます。</p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                     <div class="col-lg-6 col-lg-pull-6">
                         <div class="works works-description-left">
                             <h4>インターネット異性紹介事業届出及び受理済み</h4>
-                            <p class="timeline-subtitle">patersでは、法令遵守を第一とした上で法令に基づき「インターネット異性紹介事業」の届出を東京都公安委員会に行っており、受理されております（受理番号：3017-0048-000）。各都道府県の警察および行政機関とも連携を図っており、トラブルが起きたときでも迅速に対応できる体制を整えております。</p>
+                            <p class="timeline-subtitle">Peach Gardenでは、法令遵守を第一とした上で法令に基づき「インターネット異性紹介事業」の届出を東京都公安委員会に行っており、受理されております（受理番号：3017-0048-000）。各都道府県の警察および行政機関とも連携を図っており、トラブルが起きたときでも迅速に対応できる体制を整えております。</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-lg-push-6">
@@ -193,7 +193,7 @@
                     <div class="col-lg-6 col-lg-push-6">
                         <div class="works works-description-right">
                             <h4>インターネット異性紹介事業届出及び受理済み</h4>
-                            <p class="timeline-subtitle">patersでは、法令遵守を第一とした上で法令に基づき「インターネット異性紹介事業」の届出を東京都公安委員会に行っており、受理されております（受理番号：3017-0048-000）。各都道府県の警察および行政機関とも連携を図っており、トラブルが起きたときでも迅速に対応できる体制を整えております。</p>
+                            <p class="timeline-subtitle">Peach Gardenでは、法令遵守を第一とした上で法令に基づき「インターネット異性紹介事業」の届出を東京都公安委員会に行っており、受理されております（受理番号：3017-0048-000）。各都道府県の警察および行政機関とも連携を図っており、トラブルが起きたときでも迅速に対応できる体制を整えております。</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                     <div class="col-lg-6">
                         <div class="works works-description-right">
                             <h4>最高レベルの厳重なセキュリティ</h4>
-                            <p class="timeline-subtitle">patersでは、個人情報保護方針の策定をはじめ、アプリ内におけるすべてのデータ通信において最高峰レベルのセキュリティ「EV SSL」を採用する等、セキュリティの強化を日々努め、安全性の向上を行っております。</p>
+                            <p class="timeline-subtitle">Peach Gardenでは、個人情報保護方針の策定をはじめ、アプリ内におけるすべてのデータ通信において最高峰レベルのセキュリティ「EV SSL」を採用する等、セキュリティの強化を日々努め、安全性の向上を行っております。</p>
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
                 <h2 class="font-300">メディア取材実績</h2>
-                <p class="text-muted mt-4 title-subtitle mx-auto">patersでは、そのアプリの特長から様々なメディアからの取材実績が豊富です。</p>
+                <p class="text-muted mt-4 title-subtitle mx-auto">Peach Gardenでは、そのアプリの特長から様々なメディアからの取材実績が豊富です。</p>
             </div>
         </div>
         <div class="row mt-5">

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'CONTACT｜paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/contact.css') !!}" rel="stylesheet">

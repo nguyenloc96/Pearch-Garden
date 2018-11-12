@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', ' paters(ペイターズ) 公式 Web サイト ')
+@section('title', 'Peach Garden')
 @section('content')
     @include('layouts/__navbar')
     @include('layouts/__about')

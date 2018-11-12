@@ -49,6 +49,10 @@ li.flow-bar-list {
 }
 
 /* Page SignUp*/
+.page-signup .navbar-top {
+    padding: 15px 13px 12px 20px;
+    position: relative;
+}
 .page-signup-inner {
     width: 90%;
     margin: 0 auto 20px;

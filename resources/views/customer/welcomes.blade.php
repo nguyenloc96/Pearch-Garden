@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
@@ -24,7 +24,7 @@
                         </li>
                         <span>または</span>
                         <li>
-                            <a href="/auth/facebook">
+                            <a href="/redirect/facebook">
                                 <i class="icon icon-facebook"></i>facebookで登録する
                             </a>          
                         </li>

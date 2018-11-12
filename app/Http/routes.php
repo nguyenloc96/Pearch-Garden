@@ -17,9 +17,10 @@ Route::get('/', function () {
 Route::get('/welcomes', function () {
     return view('customer/welcomes');
 });
-Route::get('/auth/facebook', function () {
-    return view('customer/auth-facebook');
-});
+
+Route::get('/redirect/{social}', 'SocialAuthController@redirect');
+Route::get('/callback/{social}', 'SocialAuthController@callback');
+
 Route::get('/sign-up', function () {
     return view('customer/sign-up');
 });
@@ -137,8 +138,8 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
         if($message < $point){
             return redirect('/users/points')->with('success', '失敗した');
         }else{
-            $data->message = $message - $point;
-            $data->like = $like + $point;
+            $data->point = $message - $point;
+            $data->nice = $like + $point;
             $data->save();
             return redirect('/users/points')->with('success', '成功した');
         }

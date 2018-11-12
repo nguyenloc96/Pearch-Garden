@@ -43,9 +43,9 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
-                <h2 class="font-300">patersとは？</h2>
+                <h2 class="font-300">Peach Gardenとは？</h2>
                 <p class="text-muted mt-4 title-subtitle mx-auto">
-                    patersは、素敵な男女の上質な出会いを創り出せるSNSアプリです。あなたにとっての理想のお相手が見つかることを願っています。
+                    Peach Gardenは、素敵な男女の上質な出会いを創り出せるSNSアプリです。あなたにとっての理想のお相手が見つかることを願っています。
                 </p>
             </div>
         </div> 

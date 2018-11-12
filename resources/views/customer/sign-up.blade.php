@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
@@ -7,6 +7,11 @@
 @section('content')
 <div class="wrap-container">
     <section class="page page-signup page-signup-flow">
+        <div class="navbar-top">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/image/logo.png" alt="Peach Garden">
+            </a>
+        </div>
         <ol class="flow-bar flex">
             <li class="flow-bar-list"></li>
             <li class="flow-bar-list"></li>
@@ -155,7 +160,7 @@
                                         私は高校生ではありません。
                                 </label>
                                 <p>
-                                    ※patersでは、18歳以上の場合でも<br>
+                                    ※Peach Gardenでは、18歳以上の場合でも<br>
                                     高校生の方のご利用はお断りしております。
                                 </p>
                             </div>

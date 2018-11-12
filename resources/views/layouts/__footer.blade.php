@@ -22,12 +22,12 @@
         .text-muted {
             color: #868e96!important;
         }
-        .footer-terms li::after {
+        .footer-terms li:nth-child(1)::after {
             content: "|";
             margin: 0 20px;
             color: #757575;
         }
-        .footer-terms li.list-inline-item:hover{
+        .footer-terms li.list-inline-item a:hover{
             color: #fff;
         }
         .back-to-top {
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <div class="mt-4 pt-2 text-center">
-                    <p class="copy-rights text-muted mb-0">2018 © paters, Inc. All Rights Reserved.</p>
+                    <p class="copy-rights text-muted mb-0">2018 © Peach Garden, Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

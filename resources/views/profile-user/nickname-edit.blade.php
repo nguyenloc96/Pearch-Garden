@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-comment-edit">

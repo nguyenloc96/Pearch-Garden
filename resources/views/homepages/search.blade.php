@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters(ペイターズ)')
+@section('title', 'Peach Garden')
 @section('style')
     @parent
     <link href="{!! asset('assets/bootstrap-jquery/css/asRange.min.css') !!}" rel="stylesheet">
@@ -65,7 +65,7 @@
                                     class="range-example-input-2" 
                                     min="18" max="100" 
                                     step="1" 
-                                    style="display: none;" 
+                                    style="display: none;"
                                 />
                             </div>
                         </div>
