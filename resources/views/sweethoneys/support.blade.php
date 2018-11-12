@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/webpages.css') !!}" rel="stylesheet">

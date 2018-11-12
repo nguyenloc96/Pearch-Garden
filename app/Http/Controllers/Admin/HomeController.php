@@ -130,7 +130,7 @@ class HomeController extends Controller
 
     public function getSignOut(){
         Auth::logout();
-        return redirect('/sign-in')->with('success', 'You have logged out of the account');
+        return redirect('/sweethoneys/sign-in')->with('success', 'You have logged out of the account');
     }
 
     public function postEditProfileTweet(Request $request){

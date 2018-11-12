@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/webpages.css') !!}" rel="stylesheet">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="section">
                     <div class="service-title">販売元業者</div>
-                    <p class="m-b-30">株式会社paters</p>
+                    <p class="m-b-30">Sweet Honeys</p>
 
                     <div class="service-title">運営責任者</div>
                     <p class="m-b-30">日高 亜由美</p>
@@ -29,7 +29,7 @@
                     </p>
 
                     <div class="service-title">メールアドレス</div>
-                    <p class="m-b-30">info@paters.jp</p>
+                    <p class="m-b-30">info@sweethoneys.jp</p>
 
                     <div class="service-title">商品のお届け</div>
                     <p class="m-b-30">代金決済時</p>
@@ -40,7 +40,7 @@
                         <li>Android アプリ内課金 (GooglePlay決済)</li>
                         <li>iPhone アプリ内課金 (AppleID決済)</li>
                     </ul>
-                    <p>いずれの決済方法もpatersポイントは即時反映されます。</p>
+                    <p>いずれの決済方法もSweet Honeysポイントは即時反映されます。</p>
                     <div class="service-title">途中退会の場合</div>
                     <p class="m-b-30">途中退会を行った場合、商品の性質上、返金は受け付けないものとします。</p>
 

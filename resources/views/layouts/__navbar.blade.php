@@ -27,10 +27,10 @@
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Peach Garden" />
-            <!-- <img class="logo-img logo-black" src="{!! asset('assets/image/paters-logo-black.png') !!}" alt="Peach Garden" />
-            <img class="logo-img logo-white d-none" src="{!! asset('assets/image/paters-logo-white.png') !!}" alt="Peach Garden" /> -->
+        <a class="navbar-brand" href="/sweethoneys">
+            <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Sweet Honeys" />
+            <!-- <img class="logo-img logo-black" src="{!! asset('assets/image/paters-logo-black.png') !!}" alt="Sweet Honeys" />
+            <img class="logo-img logo-white d-none" src="{!! asset('assets/image/paters-logo-white.png') !!}" alt="Sweet Honeys" /> -->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

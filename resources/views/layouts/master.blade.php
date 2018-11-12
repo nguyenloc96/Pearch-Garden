@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="icon" href="{!! asset('assets/image/favicon.ico') !!}" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Peach Garden">
+        <meta name="description" content="Sweet Honeys">
         @section('style')
         <!-- Theme style -->
         <link href="{!! asset('assets/bootstrap-jquery/css/bootstrap.min.css') !!}" rel="stylesheet">

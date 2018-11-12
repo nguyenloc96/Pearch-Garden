@@ -35,7 +35,7 @@
                         </div>
                     </form>        
                     <div class="text-left mt-2">
-                        <a href="/webpages/contact">お問い合せはこちらから</a>
+                        <a href="/sweethoneys/contact">お問い合せはこちらから</a>
                     </div>
                 </div>
             </div>

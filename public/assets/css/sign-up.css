@@ -49,10 +49,6 @@ li.flow-bar-list {
 }
 
 /* Page SignUp*/
-.page-signup .navbar-top {
-    padding: 15px 13px 12px 20px;
-    position: relative;
-}
 .page-signup-inner {
     width: 90%;
     margin: 0 auto 20px;
@@ -65,8 +61,7 @@ li.flow-bar-list {
     margin: 40px auto 32px;
 }
 .page-signup-head-title p {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
 }
@@ -78,22 +73,34 @@ li.flow-bar-list {
     vertical-align: middle;
     margin-right: 6px;
 }
-.fa-birthday-cake{
+.fa {
+    font-style: normal;
+}
+.fa-calendar{
     width: 26px;
     height: 26px;
     line-height: 26px;
     font-size: 25px;
-    color: #ccc;
+    color: #000;
 }
-.fa-transgender{
+.fa-apple{
     width: 26px;
     height: 26px;
     line-height: 26px;
     font-size: 30px;
-    color: #ccc;
+    color: #000;
 }
-.fa {
-    font-style: normal;
+.fa-tag{
+    width: 26px;
+    height: 26px;
+    font-size: 20px;
+    line-height: 26px;
+}
+.fa-map-marker{
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    line-height: 26px;
 }
 .page-signup-body-input .input-box select {
     width: 27%;
@@ -137,17 +144,14 @@ li.flow-bar-list {
     font-family: 'FontAwesome';
     color: #ccc;
     font-size: 16px;
-    font-size: 1rem;
 }
 .page-signup-body-input .input-box-highschool label {
     font-size: 14px;
-    font-size: .875rem;
     color: #959595;
 }
 .page-signup-body-input .input-box-highschool p {
     color: #ccc;
     font-size: 11px;
-    font-size: .6875rem;
 }
 .page-signup-body-input .input-box:last-child {
     margin-bottom: 0;

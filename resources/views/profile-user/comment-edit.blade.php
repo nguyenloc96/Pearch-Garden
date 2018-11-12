@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-comment-edit">
@@ -30,7 +30,7 @@
                         <label class="profile-edit-label">書き方でお困りですか？</label>
                         <ul>
                             <li class="profile-edit-tabs-item">
-                                <a href="/webpages/about-profile-text" class="profile-edit-tabs-link profile-edit-tabs-link-help">魅力的な自己紹介の書き方をみる</a>
+                                <a href="/sweethoneys/about-profile-text" class="profile-edit-tabs-link profile-edit-tabs-link-help">魅力的な自己紹介の書き方をみる</a>
                             </li>
                             <li class="profile-edit-tabs-item">
                                 <a class="profile-edit-tabs-link profile-edit-tabs-link-user" href="/users/me/profile">他の会員の自己紹介をみてみる</a>

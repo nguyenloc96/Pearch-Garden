@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     <div class="header-tabs"> 

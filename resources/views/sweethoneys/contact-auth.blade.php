@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container"> 
     <section class="page page-setting page-setting-use page-setting-contact">
@@ -18,7 +18,7 @@
                         <div class="page-setting-use-list-sec">
                             <h3> お問い合わせに関して </h3>
                             <p>
-                                Peach Gardenをご利用いただき、誠にありがとうございます。<br>
+                                Sweet Honeysをご利用いただき、誠にありがとうございます。<br>
                                 ご利用中に分からないことがあった場合は、よくある質問をお読みください。
                             </p>
                         </div>
@@ -37,7 +37,7 @@
                                                 Apple Store：「<a href="https://support.apple.com/ja-jp/HT201266">Apple ID のお支払い情報を変更・削除する</a>」<br>
                                                 Google Play：「<a href="https://support.google.com/googleplay/answer/1050566?hl=ja&ref-topic=7049688">アプリ内購入に関する問題</a>」<br>
                                             【問題が解決されない場合】<br>
-                                        　  <a href="/webpages/contact">Peach Gardenカスタマーサポート</a>までお問い合わせください。
+                                        　  <a href="/sweethoneys/contact">Sweet Honeysカスタマーサポート</a>までお問い合わせください。
                                         </dd>
                                     </dl>
                                 </li>
@@ -50,7 +50,7 @@
                                 <li class="ac-list">
                                     <dl class="acMenu">
                                         <dt>退会後の再登録について</dt>
-                                        <dd>Peach Gardenを退会されますと、30日間再登録ができませんので予めご了承くださいませ。また、一度退会されますと、ポイントやいいね、過去のマッチング・やり取り中のメッセージなど全てのデータが削除され、復元されることはございませんのでお気をつけください。</dd>
+                                        <dd>Sweet Honeysを退会されますと、30日間再登録ができませんので予めご了承くださいませ。また、一度退会されますと、ポイントやいいね、過去のマッチング・やり取り中のメッセージなど全てのデータが削除され、復元されることはございませんのでお気をつけください。</dd>
                                     </dl>
                                 </li>
                                 <li class="ac-list">
@@ -61,7 +61,7 @@
                                 </li>
                             </ul>
                             <p class="submit submit-success submit-next help-btn">
-                                <a href="/webpages/question">ヘルプを見る</a>
+                                <a href="/sweethoneys/help">ヘルプを見る</a>
                             </p>
                         </div>
                         <div class="page-setting-use-list-sec page-setting-use-list-sec-contact">
@@ -72,7 +72,7 @@
                                 返信対応時間：10:00 ~ 19:00<br>
                                 場合によりご回答までに2営業日程度いただく場合もございます。場合によりご回答までに少々お時間をいただく場合もございます。予めご了承くださいませ。<br>
                                 下記から必須項目を「選択」「入力」し、「送信」ボタンを押してください。<br>
-                                「info@Peach Garden.jp」からのメールを受信できる設定になっていないと、こちらから返信できませんのでご注意ください。
+                                「info@Sweet Honeys.jp」からのメールを受信できる設定になっていないと、こちらから返信できませんのでご注意ください。
                             </p>
                             <div class="page-setting-use-list-sec-contact-form">
                                 <div class="page-modal-bk-inner-input page-registration-inner-input">
@@ -116,7 +116,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <small>「info@Peach Garden.jp」からご登録のメールアドレス宛てに返信いたします。このメールアドレスからのメールが受信できる設定がされていることをご確認ください。</small>
+                                            <small>「info@Sweet Honeys.jp」からご登録のメールアドレス宛てに返信いたします。このメールアドレスからのメールが受信できる設定がされていることをご確認ください。</small>
                             
                                             <div class="submit current">
                                                 <input type="submit" name="commit" value="送信" class="btn btn-lg btn-c" id="send" disabled="disabled" data-disable-with="送信"/>

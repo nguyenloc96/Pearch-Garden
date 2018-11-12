@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
@@ -10,7 +10,7 @@
         <div class="page-signup-inner">
             <section class="page-head page-signup-head">
                 <div class="page-signup-head-title">
-                    <p>ログイン情報<br>入力してください。</p>
+                    <p>ログイン</p>
                 </div>
             </section>
             <section class="page-body page-signup-body">
@@ -33,7 +33,7 @@
                         <div class="submit">
                             <input type="submit" name="commit" value="ログイン" disabled="disabled" data-disable-with="ログイン" />
                             <span>
-                                パスワードをお忘れの場合は<a href="/forgot-password"> こちら </a>
+                                パスワードをお忘れの場合は<a href="/sweethoneys/forgot-password"> こちら </a>
                             </span>
                         </div>
                     </form> 
@@ -42,7 +42,7 @@
             <section class="page-ftr page-signup-ftr">
                 <div class="page-signup-ftr-signup">
                     <p>
-                        アカウントをお持ちでない場合<a href="/sign-up"> 新規登録 </a>
+                        アカウントをお持ちでない場合<a href="/sweethoneys/sign-up"> 新規登録 </a>
                     </p>
                 </div>
             </section>

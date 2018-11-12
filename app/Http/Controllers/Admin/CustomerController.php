@@ -35,7 +35,7 @@ class CustomerController extends Controller
         if( Auth::attempt($auth) ){
             return redirect('/users')->with('success', 'You are now logged in');
         }else{
-            return redirect('/sign-in')->with('error', 'Wrong sign in  account');
+            return redirect('sweethoneys/sign-in')->with('error', 'Wrong sign in  account');
         }
     }
     public function postForgotPassword(Request $request){
@@ -46,7 +46,7 @@ class CustomerController extends Controller
         if ($validator->fails()) {
             return 'OK';
         }else{
-            return redirect('/forgot-password')->with('error', 'メールは存在しません');
+            return redirect('sweethoneys/forgot-password')->with('error', 'メールは存在しません');
         }
     }
     public function postSignUpStepOne(Request $request){
@@ -59,7 +59,7 @@ class CustomerController extends Controller
         $data->created_at = new DateTime();
         $data->remember_token = $request->_token;
         $data->save();
-        return redirect('sign-up/step-2/'.$data->id);
+        return redirect('sweethoneys/sign-up/step-2/'.$data->id);
     }
 
     public function postSignUpStepTwo(Request $request, $id){
@@ -67,7 +67,7 @@ class CustomerController extends Controller
         $data->name = $request->user_create_temp_name;
         $data->address = $request->user_create_temp_address;
         $data->save();
-        return redirect('sign-up/step-3/'.$id);
+        return redirect('sweethoneys/sign-up/step-3/'.$id);
     }
 
     public function postSignUpStepThree(Request $request, $id){
@@ -86,7 +86,7 @@ class CustomerController extends Controller
             $data->email = $request->user_create_temp_email;
             $data->password = bcrypt($request->user_create_temp_password);
             $data->save();
-            return redirect('sign-up/step-4/'.$id);
+            return redirect('sweethoneys/sign-up/step-4/'.$id);
         }
     }
 
@@ -110,7 +110,7 @@ class CustomerController extends Controller
             $profile->profile_id = $data->id;
             $profile->save();
 
-            return redirect('sign-up/register/'.$id)->with('tel', $data->tel);
+            return redirect('sweethoneys/smsauthor/'.$id)->with('tel', $data->tel);
         }
     }
 
@@ -125,7 +125,7 @@ class CustomerController extends Controller
                 ->withErrors($validator->errors());
         }
         else{
-            return redirect('sign-in');
+            return redirect('sweethoneys/sign-in');
         }
     }
 
@@ -147,12 +147,12 @@ class CustomerController extends Controller
         }
         else{
             $data = $request->all();
-            return view('webpages/contact-confirm', compact('data'));
+            return view('sweethoneys/contact-confirm', compact('data'));
         }
     }
 
     public function postContactConfirm(Request $request){
-        return view('webpages/contact-complete');
+        return view('sweethoneys/contact-complete');
     }
     public function postContactAuth(Request $request){
         $validator = Validator::make($request->all(), [

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     <div class="container">
@@ -45,8 +45,8 @@
                 <div class="text-center">
                     <nav aria-label="Page navigation">
                         <ul class="pagination pay-navigation">
-                            <li><a href="/webpages/privacy-policy">プライバシーポリシー</a></li>
-                            <li><a href="/webpages/rule">利用規約</a></li>
+                            <li><a href="/sweethoneys/privacy">プライバシーポリシー</a></li>
+                            <li><a href="/sweethoneys/terms">利用規約</a></li>
                         </ul>
                     </nav>
                 </div>

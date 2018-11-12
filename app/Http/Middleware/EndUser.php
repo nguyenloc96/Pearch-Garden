@@ -25,7 +25,7 @@ class EndUser
         if(isset($this->auth)){
             return $next($request);
         }else{
-            return redirect('/sign-in');
+            return redirect('/sweethoneys/sign-in');
         }
     }
 }

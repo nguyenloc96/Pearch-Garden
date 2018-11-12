@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/contact.css') !!}" rel="stylesheet">
@@ -41,19 +41,20 @@
     <div id="all-wh">
         <ul class="colms">
             <div class="b-img">
-                
             </div>
             <li class="colm img-side">
             </li>
             <li class="colm body-side">
                 <div class="form-ctnr">
-                    <h1 class="header">COMPLETE</h1>
+                    <h1 class="header">
+                        <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Sweet Honeys" />
+                    </h1>
                     <p class="sub-header">送信完了</p>
                     <div class="line"></div>
                     <p class="msg">
                         お問い合わせを送信しました。内容を確認後、担当者より迅速にご連絡いたします。
                     </p>
-                    <a class="link-to" href="/">TOPへ戻る</a>
+                    <a class="link-to" href="/sweethoneys">TOPへ戻る</a>
                 </div>
             </li>
         </ul>

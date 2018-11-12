@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     <div class="header-tabs mt-2 header-me-points"> 
@@ -27,7 +27,7 @@
                 <p class="nice-remain-txt">残いいね</p>
             </div>
             <div class="point-confirm">
-                <a href="/webpages/point-history">ポイント履歴を確認する</a>
+                <a href="/sweethoneys/point-history">ポイント履歴を確認する</a>
             </div>
         </div>
         <div class="nice-contents">
@@ -69,8 +69,8 @@
             <p>※patersポイント履歴に最新の情報が反映されるまで<br>数分かかる場合がございます。</p>
         </div>
         <div class="privacy-link">
-            <a href="/webpages/rule">利用規約</a>
-            <a href="/webpages/privacy-policy">プライバシーポリシー</a>
+            <a href="/sweethoneys/terms">利用規約</a>
+            <a href="/sweethoneys/privacy">プライバシーポリシー</a>
         </div>
     </div>
     @include('customer/footer')

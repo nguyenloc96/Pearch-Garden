@@ -18,12 +18,11 @@
     padding-right: 0px;
 }
 .title h4 {
+    margin-top: 20px;
     padding-left: 20px;
-    font-size: 16px;
-    line-height: 1.5em;
-    letter-spacing: 0.1em;
-    color: #393939;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 .table>tbody>tr>th, .table>tbody>tr>td {
     border-bottom: none;
@@ -39,8 +38,8 @@
 .section li{
     padding: 0px 20px !important;
 }
-.section .text-left p{
-    margin-bottom: 0rem !important;
+.section .text-right p{
+    text-align: right;
 }
 .section li{
     margin-top: 5px;
@@ -48,7 +47,8 @@
 /* Page Question */
 .card{
     margin-top: 10px;
-    border: none !important;
+    padding: 5px;
+    border: none;
 }
 .container #ipt-search-box{
     margin: 15px 0px;
@@ -71,6 +71,9 @@
 }
 .accordion-content {
     padding: 15px 10px;
+}
+.accordion-content a{
+    color: #337ab7;
 }
 .m-15 {
     margin: 15px 0;

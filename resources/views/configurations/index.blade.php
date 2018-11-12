@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-list">
@@ -67,7 +67,7 @@
                             <a href="/users/configuration/footprint-setting">足あと設定</a>
                         </li>
                         <li>
-                            <a href="/webpages/privatemode">プライベートモード設定</a>
+                            <a href="/sweethoneys/privatemode">プライベートモード設定</a>
                         </li>
                     </ul>
                 </div>
@@ -86,16 +86,16 @@
                     <h3>サポート</h3>
                     <ul>
                         <li>
-                            <a href="/webpages/point-history">patersポイントの履歴</a>
+                            <a href="/sweethoneys/point-history">patersポイントの履歴</a>
                         </li>
                         <li>
-                            <a href="/webpages/question">よくある質問</a>
+                            <a href="/sweethoneys/help">よくある質問</a>
                         </li>
                         <li>
-                            <a href="/webpages/support">安心してご利用いただくために</a>
+                            <a href="/sweethoneys/support">安心してご利用いただくために</a>
                         </li>
                         <li>
-                            <a href="/webpages/contact-auth">お問い合わせ</a>
+                            <a href="/sweethoneys/contact-auth">お問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -103,19 +103,19 @@
                     <h3> その他 </h3>
                     <ul>
                         <li>
-                            <a href="/webpages/company">運営会社</a>
+                            <a href="/sweethoneys/company">運営会社</a>
                         </li>
                         <li>
-                            <a href="/webpages/rule">利用規約</a>
+                            <a href="/sweethoneys/terms">利用規約</a>
                         </li>
                         <li>
-                            <a href="/webpages/privacy-policy">プライバシーポリシー</a>
+                            <a href="/sweethoneys/privacy">プライバシーポリシー</a>
                         </li>
                         <li>
-                            <a href="/webpages/specific-business-deal">特定商取引法に基づく表示</a>
+                            <a href="/sweethoneys/specific">特定商取引法に基づく表示</a>
                         </li>
                         <li>
-                            <a href="/webpages/fund-settlement">資金決済法に基づく表示</a>
+                            <a href="/sweethoneys/settlement">資金決済法に基づく表示</a>
                         </li>
                         <li class="current">
                             <a href="/users/sign-out"> patersからログアウトする </a>

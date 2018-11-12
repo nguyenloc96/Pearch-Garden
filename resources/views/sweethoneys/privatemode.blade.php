@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/webpages.css') !!}" rel="stylesheet">
@@ -16,7 +16,7 @@
                     >
                 </div>
                 <div class="m-15">
-                    <a href="/sign-in">
+                    <a href="/sweethoneys/sign-in">
                         <img 
                             style="max-width: 100%;" 
                             src="/assets/image/privatemode_02.png"

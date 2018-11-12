@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/contact.css') !!}" rel="stylesheet">
@@ -23,7 +23,9 @@
             </li>
             <li class="colm body-side">
                 <div class="form-ctnr">
-                    <h1 class="header">CONFIRM</h1>
+                    <h1 class="header">
+                        <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Sweet Honeys" />
+                    </h1>
                     <p class="sub-header">内容の確認</p>
                     <p class="sub-txt">以下の内容で送信します。よろしいですか？</p>
                     <div class="line"></div>

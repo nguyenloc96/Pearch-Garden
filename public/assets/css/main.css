@@ -1838,7 +1838,7 @@ p.inquiries-complete{
     position: absolute;
     left: -17px;
     top: 0;
-    background: url(../image/question_with_circle@3x.png) no-repeat 0 0;
+    background: url(../image/help_with_circle@3x.png) no-repeat 0 0;
     background-size: cover;
 }
 .help span {

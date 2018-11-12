@@ -41,15 +41,15 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
-                <h2 class="font-weight-light">Peach Gardenに関する お問い合わせ</h2>
-                <p class="text-muted mt-4 title-subtitle mx-auto">Peach Gardenに関するお問い合わせは、下記のお問い合わせフォームのページより行っていただくことが可能です。</p>
+                <h2 class="font-weight-light">Sweet Honeysに関する お問い合わせ</h2>
+                <p class="text-muted mt-4 title-subtitle mx-auto">Sweet Honeysに関するお問い合わせは、下記のお問い合わせフォームのページより行っていただくことが可能です。</p>
             </div>
         </div> 
         <div class="row justify-content-center mt-5">
             <div class="col-lg-12">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <a class="btn btn-custom w-100" href="/webpages/contact" target="_blank">お問い合わせはこちら</a>              
+                        <a class="btn btn-custom w-100" href="/sweethoneys/contact" target="_blank">お問い合わせはこちら</a>              
                     </div>
                 </div>
             </div>

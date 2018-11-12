@@ -1,10 +1,10 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
     <style>
-        .page-signup-flow .flow-bar-list:nth-child(1), .page-signup-flow .flow-bar-list:nth-child(2) {
+        .page-signup-flow .flow-bar-list:nth-child(1), .page-signup-flow .flow-bar-list:nth-child(2), .page-signup-flow .flow-bar-list:nth-child(3) {
             background: #72c7a1;
         }
         .input-box.input-box-clm {
@@ -66,11 +66,6 @@
 @section('content')
 <div class="wrap-container">
     <section class="page page-signup page-signup-flow">
-        <div class="navbar-top">
-            <a class="navbar-brand" href="/">
-                <img src="/assets/image/logo.png" alt="Peach Garden">
-            </a>
-        </div>
         <ol class="flow-bar flex">
             <li class="flow-bar-list"></li>
             <li class="flow-bar-list"></li>
@@ -80,7 +75,7 @@
         <div class="page-signup-inner">
             <section class="page-head page-signup-head">
                 <div class="page-signup-head-title">
-                    <p>あともうひといき。<br> ログイン情報を入力。</p>
+                    <p>あともうひといき。ログイン情報を入力。</p>
                 </div>
             </section>
             <section class="page-body page-signup-body">

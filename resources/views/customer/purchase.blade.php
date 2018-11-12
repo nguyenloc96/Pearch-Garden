@@ -6,7 +6,7 @@
         <div class="header-tabs">
             <ul>
                 <li class="header-tabs-item header-tabs-item-with-arrow">
-                    <a class="header-tabs-back" href="/webpages/buy-points"></a>
+                    <a class="header-tabs-back" href="/sweethoneys/buy-points"></a>
                     <h3>クレジットカード登録</h3>
                 </li>
             </ul>
@@ -32,7 +32,7 @@
                         </div>
                     </form>        
                     <div class="text-left mt-2">
-                        <a href="/webpages/contact">お問い合せはこちらから</a>
+                        <a href="/sweethoneys/contact">お問い合せはこちらから</a>
                     </div>
                 </div>
             </div>

@@ -1,17 +1,17 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
+    <style>
+        .page-signup-flow .flow-bar-list:first-child {
+            background: #72c7a1;
+        }
+    </style>
 @stop
 @section('content')
 <div class="wrap-container">
     <section class="page page-signup page-signup-flow">
-        <div class="navbar-top">
-            <a class="navbar-brand" href="/">
-                <img src="/assets/image/logo.png" alt="Peach Garden">
-            </a>
-        </div>
         <ol class="flow-bar flex">
             <li class="flow-bar-list"></li>
             <li class="flow-bar-list"></li>
@@ -21,7 +21,7 @@
         <div class="page-signup-inner">
             <section class="page-head page-signup-head">
                 <div class="page-signup-head-title">
-                    <p>はじめに、性別と<br>生年月日を選択。</p>
+                    <p>はじめに、性別と生年月日を選択。</p>
                 </div>
             </section>
             <!- End SignUp Head ->
@@ -30,8 +30,15 @@
                     <form method="POST" action="{!! route('sign-up-step-1') !!}" class="new-user-create-temp" id="new-user-create-temp" enctype= "multipart/form-data">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
+                        <div class="input-box input-box-sex" id="input-box-sex">
+                            <i class="fa fa-apple"></i>
+                            <input id="user-profile-sex-male" type="radio" value="1" name="user_create_temp_sex" />
+                            <label for="user-profile-sex-male">男性</label>
+                            <input id="user-profile-sex-female" type="radio" value="0" name="user_create_temp_sex" />
+                            <label for="user-profile-sex-female">女性</label>
+                        </div>
                         <div class="input-box input-box-birth">
-                            <i class="fa fa-birthday-cake"></i>
+                            <i class="fa fa-calendar"></i>
                             <select name="user_create_temp_year" id="user-create-temp-year"><option value="1930">1930年</option>
                                 <option value="1931">1931年</option>
                                 <option value="1932">1932年</option>
@@ -160,19 +167,11 @@
                                         私は高校生ではありません。
                                 </label>
                                 <p>
-                                    ※Peach Gardenでは、18歳以上の場合でも<br>
+                                    ※Sweet Honeysでは、18歳以上の場合でも<br>
                                     高校生の方のご利用はお断りしております。
                                 </p>
                             </div>
                         </div>
-                        <div class="input-box input-box-sex" id="input-box-sex">
-                            <i class="fa fa-transgender"></i>
-                            <input id="user-profile-sex-male" type="radio" value="1" name="user_create_temp_sex" />
-                            <label for="user-profile-sex-male">男性</label>
-                            <input id="user-profile-sex-female" type="radio" value="0" name="user_create_temp_sex" />
-                            <label for="user-profile-sex-female">女性</label>
-                        </div>
-                    
                         <div class="submit">
                             <input type="submit" name="commit" value="次へ" disabled="disabled" data-disable-with="次へ" />
                         </div>
@@ -182,7 +181,7 @@
             <!- End SignUp Body ->
             <section class="page-ftr page-signup-ftr">
                 <div class="page-signup-ftr-signup">
-                    <p> アカウントをお持ちのかたは <a href="/sign-in"> ログイン </a> </p>
+                    <p> アカウントをお持ちのかたは <a href="/sweethoneys/sign-in"> ログイン </a> </p>
                 </div>
             </section>
         </div>

@@ -55,12 +55,12 @@
             <div class="col-lg-12">
                 <div class="footer-terms">
                     <ul class="mb-0 list-inline text-center mt-4 pt-2">
-                        <li class="list-inline-item"><a href="#" class="text-muted" >利用規約</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-muted" >プライバシーポリシー</a></li>
+                        <li class="list-inline-item"><a href="/sweethoneys/terms" class="text-muted" >利用規約</a></li>
+                        <li class="list-inline-item"><a href="/sweethoneys/privacy" class="text-muted" >プライバシーポリシー</a></li>
                     </ul>
                 </div>
                 <div class="mt-4 pt-2 text-center">
-                    <p class="copy-rights text-muted mb-0">2018 © Peach Garden, Inc. All Rights Reserved.</p>
+                    <p class="copy-rights text-muted mb-0">2018 © Sweet Honeys. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

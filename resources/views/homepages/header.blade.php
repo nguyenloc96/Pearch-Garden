@@ -1,7 +1,7 @@
 <header id='header' class="home-header">
     <div class="header-top">
         <h1 class="header-top-logo">
-            <img src="/assets/image/paters-logo@3x.png" alt="paters">
+            <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Sweet Honeys" />
         </h1>
         <ul class="header-top-right sbs">
             <li>

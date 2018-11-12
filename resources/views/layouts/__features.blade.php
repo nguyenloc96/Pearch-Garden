@@ -73,9 +73,9 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-12">
-                    <h2 class="font-300">Peach Gardenの特長</h2>
+                    <h2 class="font-300">Sweet Honeysの特長</h2>
                     <p class="text-muted mt-4 title-subtitle mx-auto">
-                        Peach Gardenは、今までのマッチングアプリとは大きく違う様々な特長があります。普通のアプリではないものを、ここで体験することができます。
+                        Sweet Honeysは、今までのマッチングアプリとは大きく違う様々な特長があります。普通のアプリではないものを、ここで体験することができます。
                     </p>
                 </div>
             </div> 

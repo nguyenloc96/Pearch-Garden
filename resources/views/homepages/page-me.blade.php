@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('content')
 <div class="wrap-container">
     @include('homepages/header')
@@ -53,7 +53,7 @@
                         </a>        
                     </li>
                     <li>
-                        <a href="/webpages/buy-points">
+                        <a href="/sweethoneys/buy-points">
                             <i class="icon icon-buy-point"></i>ポイント購入
                         </a>        
                     </li>
@@ -68,7 +68,7 @@
                         </a>        
                     </li>
                     <li>
-                        <a href="/webpages/question">
+                        <a href="/sweethoneys/help">
                             <i class="icon icon-help"></i>ヘルプ
                         </a>        
                     </li>
@@ -83,7 +83,7 @@
                         </a>        
                     </li>
                     <li>
-                        <a class="mypage-banners-link" href="/webpages/pay">
+                        <a class="mypage-banners-link" href="/sweethoneys/pay">
                             <img class="xs-ml-5 m-t-5" src="/assets/image/2-banner.png" alt="Pay" />
                         </a>          
                     </li>

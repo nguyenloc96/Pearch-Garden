@@ -12,30 +12,15 @@ use App\Profile;
 |
 */
 Route::get('/', function () {
-    return view('customer/index');
+    return  redirect('/sweethoneys');;
 });
 Route::get('/welcomes', function () {
     return view('customer/welcomes');
 });
-
 Route::get('/redirect/{social}', 'SocialAuthController@redirect');
 Route::get('/callback/{social}', 'SocialAuthController@callback');
-
-Route::get('/sign-up', function () {
-    return view('customer/sign-up');
-});
-Route::get('/sign-in', function () {
-    if(Auth::check()){
-        return redirect('/users');
-    }else{
-        return view('customer/sign-in');
-    }
-});
 Route::get('/inquiries-complete', function () {
     return view('customer/inquiries-complete');
-});
-Route::get('/forgot-password', function () {
-    return view('customer/forgot-password');
 });
 Route::get('/purchase/input-creditcard', function(){
     return view('/configurations/input-creditcard');
@@ -43,82 +28,92 @@ Route::get('/purchase/input-creditcard', function(){
 Route::get('/purchase/{point}', function(){
     return view('/customer/purchase');
 });
-
-Route::post('/sign-in', ['as' => 'sign-in', 'uses' => 'Admin\CustomerController@postSignIn']);
-Route::post('/forgot-password', ['as' => 'forgot-password', 'uses' => 'Admin\CustomerController@postForgotPassword']);
-Route::post('/signup-step1', ['as' => 'sign-up-step-1', 'uses' => 'Admin\CustomerController@postSignUpStepOne']);
-Route::post('/signup-step2/{id}', ['as' => 'sign-up-step-2', 'uses' => 'Admin\CustomerController@postSignUpStepTwo']);
-Route::post('/signup-step3/{id}', ['as' => 'sign-up-step-3', 'uses' => 'Admin\CustomerController@postSignUpStepThree']);
-Route::post('/signup-step4/{id}', ['as' => 'sign-up-step-4', 'uses' => 'Admin\CustomerController@postSignUpStepFour']);
-Route::post('/signup/register/{id}', ['as' => 'register', 'uses' => 'Admin\CustomerController@postRegister']);
-
-Route::group(['prefix' => '/sign-up'], function() {
+Route::group(['prefix' => 'sweethoneys'], function() {
     Route::get('/', function () {
-        return view('customer/sign-up');
+        return view('customer/index');
     });
-
-    Route::get('/step-2/{id}', function ($id) {
-        return view('customer/signup-step2')->with('id', $id);
-    });
-    Route::get('/step-3/{id}', function ($id) {
-        return view('customer/signup-step3')->with('id', $id);
-    });
-    Route::get('/step-4/{id}', function ($id) {
-        return view('customer/signup-step4')->with('id', $id);
-    });
-    Route::get('/register/{id}', function ($id) {
-        return view('customer/signup-register')->with('id', $id);
-    });
-});
-Route::group(['prefix' => 'webpages'], function() {
-    Route::get('/question', function () {
-        return view('webpages/question');
+    Route::get('/help', function () {
+        return view('sweethoneys/help');
     });
     Route::get('/contact', function () {
-        return view('webpages/contact');
+        return view('sweethoneys/contact');
     });
     Route::get('/contact-auth', function () {
-        return view('webpages/contact-auth');
+        return view('sweethoneys/contact-auth');
     });
     Route::get('/support', function () {
-        return view('webpages/support');
+        return view('sweethoneys/support');
     });
     Route::get('/contact-confirm', function () {
-        return view('webpages/contact-confirm');
+        return view('sweethoneys/contact-confirm');
     });
     Route::get('/contact-complete', function () {
-        return view('webpages/contact-complete');
+        return view('sweethoneys/contact-complete');
     });
-    Route::get('/privacy-policy', function () {
-        return view('webpages/privacy-policy');
+    Route::get('/privacy', function () {
+        return view('sweethoneys/privacy');
     });
     Route::get('/company', function () {
-        return view('webpages/company');
+        return view('sweethoneys/company');
     });
-    Route::get('/rule', function () {
-        return view('webpages/rule');
+    Route::get('/terms', function () {
+        return view('sweethoneys/terms');
     });
-    Route::get('/specific-business-deal', function () {
-        return view('webpages/business-deal');
+    Route::get('/specific', function () {
+        return view('sweethoneys/specific');
     });
-    Route::get('/fund-settlement', function () {
-        return view('webpages/fund-settlement');
+    Route::get('/settlement', function () {
+        return view('sweethoneys/settlement');
     });
     Route::get('/privatemode', function () {
-        return view('webpages/privatemode');
+        return view('sweethoneys/privatemode');
     });
     Route::get('/point-history', function () {
-        return view('webpages/point-history');
+        return view('sweethoneys/point-history');
     });
     Route::get('/about-profile-text', function () {
-        return view('webpages/about-profile-text');
+        return view('sweethoneys/about-profile-text');
     });
     Route::get('/buy-points', function () {
-        return view('webpages/buy-points');
+        return view('sweethoneys/buy-points');
     });
     Route::get('/pay', function () {
-        return view('webpages/pay');
+        return view('sweethoneys/pay');
     });
+    Route::get('/sign-in', function () {
+        if(Auth::check()){
+            return redirect('/users');
+        }else{
+            return view('customer/sign-in');
+        }
+    });
+    Route::group(['prefix' => '/sign-up'], function() {
+        Route::get('/', function () {
+            return view('customer/sign-up');
+        });
+        Route::get('/step-2/{id}', function ($id) {
+            return view('customer/signup-step2')->with('id', $id);
+        });
+        Route::get('/step-3/{id}', function ($id) {
+            return view('customer/signup-step3')->with('id', $id);
+        });
+        Route::get('/step-4/{id}', function ($id) {
+            return view('customer/signup-step4')->with('id', $id);
+        });
+    });
+    Route::get('/smsauthor/{id}', function ($id) {
+        return view('customer/smsauthor')->with('id', $id);
+    });
+    Route::get('/forgot-password', function () {
+        return view('customer/forgot-password');
+    });
+    Route::post('/sign-in', ['as' => 'sign-in', 'uses' => 'Admin\CustomerController@postSignIn']);
+    Route::post('/forgot-password', ['as' => 'forgot-password', 'uses' => 'Admin\CustomerController@postForgotPassword']);
+    Route::post('/signup-step1', ['as' => 'sign-up-step-1', 'uses' => 'Admin\CustomerController@postSignUpStepOne']);
+    Route::post('/signup-step2/{id}', ['as' => 'sign-up-step-2', 'uses' => 'Admin\CustomerController@postSignUpStepTwo']);
+    Route::post('/signup-step3/{id}', ['as' => 'sign-up-step-3', 'uses' => 'Admin\CustomerController@postSignUpStepThree']);
+    Route::post('/signup-step4/{id}', ['as' => 'sign-up-step-4', 'uses' => 'Admin\CustomerController@postSignUpStepFour']);
+    Route::post('/signup/register/{id}', ['as' => 'register', 'uses' => 'Admin\CustomerController@postRegister']);
     Route::post('/contact', ['as' => 'contact', 'uses' => 'Admin\CustomerController@postContact']);
     Route::post('/contact-confirm', ['as' => 'contact-confirm', 'uses' => 'Admin\CustomerController@postContactConfirm']);
     Route::post('/contact-auth', ['as' => 'contact-auth', 'uses' => 'Admin\CustomerController@postContactAuth']);
@@ -394,3 +389,7 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
     Route::post('/invitation/new-status', ['as' => 'users.invitation', 'uses' => 'Admin\HomeController@getInvationUser']);
     Route::post('/search', ['as' => 'user.search', 'uses' => 'Admin\HomeController@postSearch']);
 });
+
+Route::get('/{any}', function ($any) {
+    return view('layouts/__error');
+})->where('any', '.*');

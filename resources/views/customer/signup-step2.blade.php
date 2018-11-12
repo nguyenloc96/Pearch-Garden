@@ -1,11 +1,11 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/sign-up.css') !!}" rel="stylesheet">
     <style>
         /* Sign Up Step 2*/
-        .page-signup-flow .flow-bar-list:first-child {
+        .page-signup-flow .flow-bar-list:first-child,  .page-signup-flow .flow-bar-list:nth-child(2) {
             background: #72c7a1;
         }
         .input-box.input-box-clm {
@@ -52,11 +52,6 @@
 @section('content')
 <div class="wrap-container">
     <section class="page page-signup page-signup-flow">
-        <div class="navbar-top">
-            <a class="navbar-brand" href="/">
-                <img src="/assets/image/logo.png" alt="Peach Garden">
-            </a>
-        </div>
         <ol class="flow-bar flex">
             <li class="flow-bar-list"></li>
             <li class="flow-bar-list"></li>
@@ -66,7 +61,7 @@
         <div class="page-signup-inner">
             <section class="page-head page-signup-head">
                 <div class="page-signup-head-title">
-                    <p>次に、ニックネームと<br>居住地を入力。</p>
+                    <p>次に、ニックネームと居住地を入力。</p>
                 </div>
             </section>
             <section class="page-body page-signup-body">
@@ -75,11 +70,11 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         
                         <div class="input-box input-box-clm input-box-focus">
-                            <i class="fa fa-transgender"></i>
+                            <i class="fa fa-tag"></i>
                             <input placeholder="ニックネーム" autocomplete="off" type="text" name="user_create_temp_name" id="user-create-temp-name" />
                         </div>
                         <div class="input-box input-box-clm">
-                            <i class="fa fa-transgender"></i>
+                            <i class="fa fa-map-marker"></i>
                             <select name="user_create_temp_address" id="user-create-temp-prof-address-id"><option value="">居住を選択</option>
                                 <option value="非公開">非公開</option>
                                 <option value="東京都">東京都</option>

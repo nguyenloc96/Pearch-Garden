@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Peach Garden')
+@section('title', 'Sweet Honeys')
 @section('style')
     @parent
     <link href="{!! asset('assets/css/contact.css') !!}" rel="stylesheet">
@@ -17,15 +17,16 @@
     <div id="all-wh">
         <ul class="colms">
             <div class="b-img">
-                
             </div>
             <li class="colm img-side">
             </li>
             <li class="colm body-side">
                 <div class="form-ctnr">
-                    <h1 class="header">CONTACT</h1>
+                    <h1 class="header">
+                        <img class="logo-img" src="{!! asset('assets/image/logo.png') !!}" alt="Sweet Honeys" />
+                    </h1>
                     <p class="sub-header">お問い合わせ</p>
-                    <p class="sub-txt"><span class="en-st">Peach Garden</span>への各種お問い合わせは<br>こちらより承っています。</p>
+                    <p class="sub-txt"><span class="en-st">Sweet Honeys</span>への各種お問い合わせは<br>こちらより承っています。</p>
                     <p class="sb-note">※の項目は必須項目です。</p>
                     <div class="line"></div>
                     <div class="error-wrp sub-txt">
@@ -55,9 +56,9 @@
                         </p>
                         <p class="p-ctnr">
                             <select class="type" id="type" name="contact_category"><option value="">*お問い合わせの種類を入力してください</option>
-                                <option value="Peach Gardenへの取材依頼">Peach Gardenへの取材依頼</option>
+                                <option value="Sweet Honeysへの取材依頼">Sweet Honeysへの取材依頼</option>
                                 <option value="サービス内容について">サービス内容について</option>
-                                <option value="Peach Gardenでのトラブルについて">Peach Gardenでのトラブルについて</option>
+                                <option value="Sweet Honeysでのトラブルについて">Sweet Honeysでのトラブルについて</option>
                                 <option value="サービスへのログイン・購入について">サービスへのログイン・購入について</option>
                                 <option value="その他ご意見・ご質問など">その他ご意見・ご質問など</option>
                             </select>
@@ -68,7 +69,7 @@
                             {!! $errors->first('contact_body', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="agreement-title">ご記入いただいた個人情報はお問い合わせへの回答およびご連絡の目的においてのみ使用させていただきます。お問い合わせの際は
-                            <a target="_blank" class="link" href="/webpages/privacy-policy">「個人情報の取り扱い」</a>をご覧いただきご同意の上で、下記にチェックをお願いいたします。
+                            <a target="_blank" class="link" href="/sweethoneys/privacy">「個人情報の取り扱い」</a>をご覧いただきご同意の上で、下記にチェックをお願いいたします。
                         </p>
                         <div class="checkbox-area">
                             <label>
