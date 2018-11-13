@@ -112,3 +112,23 @@ span.any {
     font-size: 16px;
     margin-bottom: 0px;
 }
+p.m-b-30{
+    padding: 0px 15px;
+}
+@media all and (max-width: 479px){
+    .section p, .section .service-title{
+        padding: 0px 15px;
+    }
+    p.m-b-30{
+        padding: 0px 30px;
+    }
+    .card{
+        padding: 0px 10px;
+    }
+    .table{
+        margin: 0px 5px 1rem 5px;
+    }
+    .section li{
+        padding: 0px 30px !important;
+    }
+}

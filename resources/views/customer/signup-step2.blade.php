@@ -71,11 +71,12 @@
                         
                         <div class="input-box input-box-clm input-box-focus">
                             <i class="fa fa-tag"></i>
-                            <input placeholder="ニックネーム" autocomplete="off" type="text" name="user_create_temp_name" id="user-create-temp-name" />
+                            <input placeholder="ニックネーム" autocomplete="off" type="text" name="user_create_temp_name" id="user-create-temp-name" value="{{ old('user_create_temp_name') }}"/>
                         </div>
                         <div class="input-box input-box-clm">
                             <i class="fa fa-map-marker"></i>
-                            <select name="user_create_temp_address" id="user-create-temp-prof-address-id"><option value="">居住を選択</option>
+                            <select name="user_create_temp_address" id="user-create-temp-prof-address-id" value="{{ old('user_create_temp_address') }}">
+                                <option value="居住を選択">居住を選択</option>
                                 <option value="非公開">非公開</option>
                                 <option value="東京都">東京都</option>
                                 <option value="神奈川県">神奈川県</option>

@@ -39,7 +39,8 @@
                         </div>
                         <div class="input-box input-box-birth">
                             <i class="fa fa-calendar"></i>
-                            <select name="user_create_temp_year" id="user-create-temp-year"><option value="1930">1930年</option>
+                            <select name="user_create_temp_year" id="user-create-temp-year">
+                                <option value="1930">1930年</option>
                                 <option value="1931">1931年</option>
                                 <option value="1932">1932年</option>
                                 <option value="1933">1933年</option>

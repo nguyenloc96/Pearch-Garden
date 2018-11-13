@@ -286,3 +286,21 @@ input.submit-button:hover, input.back:hover {
         margin-top: 10px;
     }
 }
+@media all and (max-width: 479px){
+    .b-img {
+        display: none;
+    }
+    .body-side {
+        width: 100%;
+    }
+    .p-ctnr input ,.p-ctnr select{
+        height: 40px !important;
+    }
+    .button-wrapper .submit-button{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .output-val{
+        padding: 10px 12px;
+    }
+}

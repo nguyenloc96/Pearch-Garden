@@ -135,11 +135,18 @@
                 display: none;
             }
             .offset-2 {
-                margin-left: 0;
+                margin-left: 0px;
             }
             .col-lg-4{
-                width: 50%;
+                width: 100%;
                 float: left;
+            }
+            .col-lg-4{
+                width: 100%;
+                float: left;
+            }
+            #media .col-lg-4{
+                width: 50%;
             }
         }
     </style>

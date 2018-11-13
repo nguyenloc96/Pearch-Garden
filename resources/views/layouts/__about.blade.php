@@ -81,6 +81,11 @@
             background-color: #0cbd8b;
             border-color: #0cbd8b;
         }
+        @media all and (max-width: 479px){
+            #about h1.home-title{
+                font-size: 28px;
+            }
+        }
     </style>
 @stop
 <!-- START HOME -->

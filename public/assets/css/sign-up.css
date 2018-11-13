@@ -617,3 +617,9 @@ input[type=email]:focus, input[type=password]:focus, input[type=email]:active, i
 .txt-head a:hover, .txt-head a:focus, .txt-btn a:hover, .txt-btn a:focus{
     opacity: 0.7;
 }
+@media all and (max-width: 479px){
+    .page-signup-body-input .input-box select {
+        padding: 10px 8px;
+    }
+
+}

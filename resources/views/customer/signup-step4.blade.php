@@ -301,7 +301,7 @@
                                 <option value="Reunion 262">レユニオン Reunion (+262)</option>
                                 <option value="Russian 7">ロシア連邦 Russian Fed. (+7)</option>
                             </select>
-                            <input placeholder="携帯電話番号を入力" autocomplete="off" type="tel" name="user_create_temp_phone" id="user-create-temp-phone" />
+                            <input placeholder="携帯電話番号を入力" autocomplete="off" type="tel" name="user_create_temp_phone" id="user-create-temp-phone" value="{{ old('user_create_temp_phone') }}"/>
                             {!! $errors->first('user_create_temp_phone', '<span class="error-text">電話番号は既に存在します</span>') !!}                        
                         </div>
                         <div class="back back-next">

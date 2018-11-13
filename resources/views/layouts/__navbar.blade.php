@@ -21,7 +21,22 @@
         .navbar-custom .navbar-nav li a.active{
             color: #07d79c !important;
         }
-        
+        @media all and (max-width: 479px){
+            .logo-img{
+                margin-left: 10px;
+            }
+            .navbar-toggler{
+                background-color: white;
+                margin-right: 10px;
+            }
+            .nav-item{
+                margin-left: 10px;
+            }
+            .navbar-custom {
+                background-color: #3C3F41 !important;
+                padding: 5px 0px;
+            }
+        }
     </style>
 @stop
 
@@ -58,3 +73,14 @@
     </div>
 </nav>
 
+@section('script')
+    @parent
+    <script>
+        $('.nav-item').click(function () {
+            $('.navbar-collapse').toggle();
+        });
+        $('.navbar-toggler-icon').click(function () {
+            $('.navbar-collapse').toggle();
+        });
+    </script>
+@stop
