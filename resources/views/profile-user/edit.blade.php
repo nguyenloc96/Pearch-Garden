@@ -37,10 +37,19 @@
                             <form class="main-image-upload-form" id="edit_user_profile" action="" method="post">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 
-                                <input class="main-image-upload-file-field" id="main_profile_image_upload_file" type="file" name="user_profile_image" />
+                                <input 
+                                    class="main-image-upload-file-field"
+                                    id="main_profile_image_upload_file" 
+                                    type="file" name="user_profile_image" 
+                                    accept="image/*"
+                                    onChange="setImage(this);"
+                                />
                                 <input value="0" type="hidden" name="user_profile_sort_order" id="user_profile_profile_image[sort_order]" />
                             </form>          
-                            <img src="/assets/image/edit_prof_icon@3x.png" alt="編集する" id="main_edit_button">
+                            <img 
+                                src="/assets/image/edit_prof_icon@3x.png" 
+                                alt="編集する" id="main_edit_button"
+                            >
                         </div>
                     </div>
                     <div class="help">
@@ -59,16 +68,138 @@
                         </span>
                     </h2>
                     <ul class="subphoto-list">
+                        <li class="subphoto-item subphoto-item-1" style="display: none;">
+                            <form 
+                                class="image-upload-form" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <img id="image-upload-1" src=""/>
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_subphoto_1" 
+                                />
+                                <input 
+                                    value="1" 
+                                    type="hidden" 
+                                    name="user_profile_subphoto_order_1" 
+                                />
+                            </form>      
+                        </li>
+                        <li class="subphoto-item subphoto-item-2" style="display: none;">
+                            <form 
+                                class="image-upload-form" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <img id="image-upload-2" src=""/>
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_subphoto_2" 
+                                />
+                                <input 
+                                    value="1" 
+                                    type="hidden" 
+                                    name="user_profile_subphoto_order_2" 
+                                />
+                            </form>      
+                        </li>
+                        <li class="subphoto-item subphoto-item-3" style="display: none;">
+                            <form 
+                                class="image-upload-form" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <img id="image-upload-3" src=""/>
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_subphoto_3" 
+                                />
+                                <input 
+                                    value="1" 
+                                    type="hidden" 
+                                    name="user_profile_subphoto_order_3" 
+                                />
+                            </form>      
+                        </li>
+                        <li class="subphoto-item subphoto-item-4" style="display: none;">
+                            <form 
+                                class="image-upload-form" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <img id="image-upload-4" src=""/>
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_subphoto_4" 
+                                />
+                                <input 
+                                    value="1" 
+                                    type="hidden" 
+                                    name="user_profile_subphoto_order_4" 
+                                />
+                            </form>      
+                        </li>
+                        <li class="subphoto-item subphoto-item-5" style="display: none;">
+                            <form 
+                                class="image-upload-form" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <img id="image-upload-5" src=""/>
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_subphoto_5" 
+                                />
+                                <input 
+                                    value="1" 
+                                    type="hidden" 
+                                    name="user_profile_subphoto_order_5" 
+                                />
+                            </form>      
+                        </li>
                         <li class="subphoto-item subphoto-item-last">
                             <div class="space-square sub-edit-button"></div>
-                            <form class="image-upload-form" id="image_upload_form_for_empty" action="" method="post">
+                            <form 
+                                class="image-upload-form" 
+                                id="image_upload_form_for_empty" 
+                                action="" method="post"
+                                enctype="multipart/form-data"
+                            >
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                 <div class="subphoto-add sub-edit-button">
                                     <p>追加</p>
                                 </div>
-                                <input class="image-upload-file-field image-nothing" id="profile_image_upload_file_add" type="file" name="user_profile_image_2" />
-                                <input value="1" id="profile_image_upload_file_sort_order" type="hidden" name="user_profile_image_sort_order_2" />
+
+                                <input 
+                                    class="image-upload-file-field image-nothing" 
+                                    id="profile_image_upload_file_add" 
+                                    onChange="addImage(this);"
+                                    type="file" 
+                                    accept="image/*"
+                                    name="user_profile_image_2" 
+                                />
+                                <input 
+                                    value="1" 
+                                    id="profile_image_upload_file_sort_order" 
+                                    type="hidden" name="user_profile_image_sort_order_2"
+                                />
                             </form>      
                         </li>
                     </ul>
@@ -127,19 +258,42 @@
 @section('script')
     @parent
     <script>
-        $(document).ready(function(){
-            $('#main_edit_button').on('click', function(){
+        $('#main_edit_button').on('click', function(){
+            $('#main_profile_image_upload_file').trigger('click');
+            if(/iP(hone|(o|a)d)/.test(navigator.userAgent)) {
                 $('#main_profile_image_upload_file').trigger('click');
-                if(/iP(hone|(o|a)d)/.test(navigator.userAgent)) {
-                    $('#main_profile_image_upload_file').trigger('click');
-                }
-            });
-            $('.sub-edit-button').on('click', function(){
-                $('#profile_image_upload_file_add').trigger('click');
-                if(/iP(hone|(o|a)d)/.test(navigator.userAgent)) {
-                    $('profile_image_upload_file_add').trigger('click');
-                }
-            });
+            }
         });
+        $('.sub-edit-button').on('click', function(){
+            $('#profile_image_upload_file_add').trigger('click');
+            if(/iP(hone|(o|a)d)/.test(navigator.userAgent)) {
+                $('profile_image_upload_file_add').trigger('click');
+            }
+        });
+        
+        function setImage(fileImage){
+            if (fileImage.files && fileImage.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#main_profile_image_upload').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(fileImage.files[0]);
+            }
+        }
+        var countImg = 0;
+        
+        function addImage(fileImage){
+            countImg++;
+            if (fileImage.files && fileImage.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var $className = '.subphoto-list .subphoto-item-'+countImg;
+                    $($className).css('display', '');
+                    var $src = '#image-upload-'+countImg;
+                    $($src).attr('src', e.target.result);
+                };
+                reader.readAsDataURL(fileImage.files[0]);
+            }
+        }
     </script>
 @stop

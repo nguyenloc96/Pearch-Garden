@@ -54,7 +54,7 @@
                             <p class="alert-message-copy alert-message-copy-first">
                                 公開が制限されています
                             </p>
-                            <p><span class="translation-missing" title="translation missing: ja.views/users/me/profiles.common.image_role_hide_description.show_public">Show Public</span></p>
+                            <p><span class="translation-missing" title="translation missing">Show Public</span></p>
                             <div class="alert-message-btngroup">
                                 <a href="#" id="btn-alert-message-ok" class="alert-message-button">
                                     OK

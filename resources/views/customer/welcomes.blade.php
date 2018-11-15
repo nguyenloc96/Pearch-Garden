@@ -42,7 +42,7 @@
                         登録すると同時に私は Sweet Honeys の利用規約と<br>
                         <a href="/sweethoneys/privacy">プライバシーポリシー</a>に同意します。
                     </p>
-                    <p class="txt-btn">アカウントをお持ちの場合は、こちらから<a href="/sweethoneys/sign-in">ログイン</a></p>
+                    <p class="txt-btn">アカウントをお持ちの場合は、こちらから<a href="/sweethoneys/sign-in" id="btn-sign-in">ログイン</a></p>
                 </div>
             </section>
         </div>

@@ -1840,7 +1840,7 @@ p.inquiries-complete{
     position: absolute;
     left: -17px;
     top: 0;
-    background: url(../image/help_with_circle@3x.png) no-repeat 0 0;
+    background: url(../image/question_with_circle@3x.png) no-repeat 0 0;
     background-size: cover;
 }
 .help span {
@@ -1878,9 +1878,15 @@ p.inquiries-complete{
     cursor: pointer;
 }
 .subphoto-list .subphoto-item {
-
     width: calc(100%/3);
     position: relative;
+}
+.subphoto-list .subphoto-item img{
+    width: 213.33px;
+    height: 213.33px;
+    padding: 2px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
 }
 .space-square {
     width: 100%;
@@ -4370,6 +4376,7 @@ p.inquiries-complete{
     padding: 10px;
     font-size: 13px;
     margin: 0 0 20px;
+    min-height: 25px;
 }
 .page-breach-textarea {
     border: 1px solid #ccc;
@@ -4387,6 +4394,9 @@ p.inquiries-complete{
     font-size: 11px;
     color: #2d2d2d;
     margin: 0 0 5px;
+}
+.page-age-attention-button .disabled{
+    pointer-events: none;
 }
 @media all and (max-width: 479px){
     .like-list-content {
@@ -4430,5 +4440,11 @@ p.inquiries-complete{
     }
     .alert-message-more .alert-message-inner , .alert-message-more-item .alert-message-inner{
         width: 350px;
+    }
+    .page-breach-input{
+        height: 40px;
+    }
+    .subphoto-list .subphoto-item img{
+        height: 140px;
     }
 }
