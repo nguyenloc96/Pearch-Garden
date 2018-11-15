@@ -13,6 +13,7 @@
             </div>
         </section>
         <section class="page-body">
+             <!-- Empty Inner -->
             <div class="page-empty-inner">
                 <img class="page-empty-icon" src="/assets/image/empty_view_icon_5@3x.png" alt="">
                 <p class="page-empty-title">

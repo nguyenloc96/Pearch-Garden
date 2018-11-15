@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-xs-12 pay-head-image">
                 <div class="text-center">
-                    <img src="https://static.paters.jp/paters_app/images/paying_01.png">
-                    <!--<img src="https://static.paters.jp/paters_app/images/paying_02.png" height="auto" width="100%">-->
+                    <img src="/assets/image/paying_01.png">
+                    <!--<img src="/assets/image/paying_01.png" height="auto" width="100%">-->
                 </div>
             </div>
             <div class="col-xs-12 p-b-25 pay-content-image">

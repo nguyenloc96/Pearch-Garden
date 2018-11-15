@@ -35,7 +35,7 @@ class CustomerController extends Controller
         if( Auth::attempt($auth) ){
             return redirect('/users')->with('success', 'You are now logged in');
         }else{
-            return redirect('sweethoneys/sign-in')->with('error', 'Wrong sign in  account');
+            return redirect('sweethoneys/sign-in')->with('error', 'Wrong sign in  account')->withInput();
         }
     }
     public function postForgotPassword(Request $request){
@@ -168,6 +168,37 @@ class CustomerController extends Controller
         }
         else{
             return redirect('/inquiries-complete');
+        }
+    }
+
+    public function postConvertPoint(Request $request, $id){
+        $validator = Validator::make($request->all(), [
+            'message' => 'required|max:200',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect() -> back()
+                ->withInput()
+                ->withErrors($validator->errors());
+        }
+        else{
+            return redirect('/users/'.$id.'/view-profile')->with('success','成功した転送');
+        }
+    }
+
+    public function postReportUser(Request $request, $id){
+        $validator = Validator::make($request->all(), [
+            'violation_category_id' => 'required',
+            'violation_reason' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect() -> back()
+                ->withInput()
+                ->withErrors($validator->errors());
+        }
+        else{
+            return redirect('/users/'.$id.'/view-profile')->with('success','ブロックしました');
         }
     }
 }   

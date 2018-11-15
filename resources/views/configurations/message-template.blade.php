@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - メッセージテンプレート')
+@section('title', 'Sweet Honeys - メッセージテンプレート')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-fiend-invite">

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 定期課金設定')
+@section('title', 'Sweet Honeys - 定期課金設定')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting-card">

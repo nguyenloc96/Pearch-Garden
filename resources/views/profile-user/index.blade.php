@@ -21,10 +21,10 @@
                     <div class="user-card-thumb">
                         <figure>
                             <img id="main-photo" src="/assets/image/male-a.png" alt="Male" />
-                            <figcaption>Lộc Nguyễn 22歳 海外</figcaption>
+                            <figcaption>{{ Auth::user()->name }} 22 {{ Auth::user()->address }}</figcaption>
                         </figure>
                         <div class="user-card-person">
-                            <h2 class="user-card-person-name">Lộc Nguyễn 22 歳 海外</h2>
+                            <h2 class="user-card-person-name">{{ Auth::user()->name }} 22 {{ Auth::user()->address }}</h2>
                             <div class="user-card-person-social"></div>
                             <p class="user-card-person-desc"> {!! $data[0]->tweet == '' ? '...' : $data[0]->tweet !!}</p>
                         </div>

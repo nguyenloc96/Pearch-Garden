@@ -35,23 +35,23 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <p class="p-ctnr">
-                            <input autocomplete="name" class="name" placeholder="*お名前" type="text" name="contact_name" id="contact-name" />
+                            <input autocomplete="name" class="name" placeholder="*お名前" type="text" name="contact_name" id="contact-name" value="{{ old('contact_name') }}"/>
                             {!! $errors->first('contact_name', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
-                            <input class="name-char" placeholder="*フリガナ" type="text" name="contact_hurigana" id="contact-hurigana" />
+                            <input class="name-char" placeholder="*フリガナ" type="text" name="contact_hurigana" id="contact-hurigana" value="{{ old('contact_hurigana') }}"/>
                             {!! $errors->first('contact_hurigana', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
-                            <input autocomplete="organization" class="organization" placeholder="会社名" type="text" name="contact_company" id="contact-company" />
+                            <input autocomplete="organization" class="organization" placeholder="会社名" type="text" name="contact_company" id="contact-company" value="{{ old('contact_company') }}"/>
                             {!! $errors->first('contact_company', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
-                            <input class="email" autocomplete="email" placeholder="*メールアドレス" type="email" name="contact_email" id="contact-email" />
+                            <input class="email" autocomplete="email" placeholder="*メールアドレス" type="email" name="contact_email" id="contact-email" value="{{ old('contact_email') }}"/>
                             {!! $errors->first('contact_email', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
-                            <input class="phone-number" placeholder="*電話番号 (半角数字、ハイフン無し)" type="number" name="contact_phone" id="contact-phone" />
+                            <input class="phone-number" placeholder="*電話番号 (半角数字、ハイフン無し)" type="number" name="contact_phone" id="contact-phone" value="{{ old('contact_phone') }}"/>
                             {!! $errors->first('contact_phone', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
@@ -65,7 +65,7 @@
                             {!! $errors->first('contact_category', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="p-ctnr">
-                            <textarea class="contact-msg" wrap="hard" placeholder="*お問い合わせ内容を入力してください" name="contact_body" id="contact-body"></textarea>
+                            <textarea class="contact-msg" wrap="hard" placeholder="*お問い合わせ内容を入力してください" name="contact_body" id="contact-body" value="{{ old('contact_body') }}"></textarea>
                             {!! $errors->first('contact_body', '<span class="error-text ">:message</span>') !!}
                         </p>
                         <p class="agreement-title">ご記入いただいた個人情報はお問い合わせへの回答およびご連絡の目的においてのみ使用させていただきます。お問い合わせの際は

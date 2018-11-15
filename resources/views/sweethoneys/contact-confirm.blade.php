@@ -54,7 +54,7 @@
                         </p>
                         <p class="p-ctnr">
                             <p class="ov-title">お問合わせの種類</p>
-                            <p class="output-val">patersでのトラブルについて</p>
+                            <p class="output-val">Sweet Honeys でのトラブルについて</p>
                         </p>
                         <p class="p-ctnr">
                             <p class="ov-title">お問合わせの内容</p>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 電話番号変更')
+@section('title', 'Sweet Honeys - 電話番号変更')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting">

@@ -12,7 +12,7 @@ use App\Profile;
 |
 */
 Route::get('/', function () {
-    return  redirect('/sweethoneys');;
+    return  redirect('/sweethoneys');
 });
 Route::get('/welcomes', function () {
     return view('customer/welcomes');
@@ -22,12 +22,21 @@ Route::get('/callback/{social}', 'SocialAuthController@callback');
 Route::get('/inquiries-complete', function () {
     return view('customer/inquiries-complete');
 });
-Route::get('/purchase/input-creditcard', function(){
-    return view('/configurations/input-creditcard');
+Route::group(['prefix' => 'purchase'], function() {
+    Route::get('/input-creditcard', function(){
+        return view('/configurations/input-creditcard');
+    });
+    Route::get('/check/{point}', function($point){
+        return view('/customer/purchase-check');
+    });
+    Route::get('/complete', function(){
+        return view('/customer/purchase-complete');
+    });
+    Route::get('/{point}', function($point){
+        return view('/customer/purchase');
+    });
 });
-Route::get('/purchase/{point}', function(){
-    return view('/customer/purchase');
-});
+
 Route::group(['prefix' => 'sweethoneys'], function() {
     Route::get('/', function () {
         return view('customer/index');
@@ -125,6 +134,20 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
     Route::get('/points', function(){
         return view('/configurations/points');
     });
+    // View profile friend
+    Route::get('/{id}/view-profile', function($id){
+        $data = App\Profile::where('profile_id', $id)->get();
+        $user = App\User::where('id', $id)->get();
+        return view('/profile-friend/view', compact(['data','user']));
+    });
+    // Report user 
+    Route::get('/violation-report/{id}', function($id){
+        return view('/profile-friend/report', compact('id'));
+    });
+    Route::post('/{id}/view-profile', ['as' => 'convert.point', 'uses' => 'Admin\CustomerController@postConvertPoint']);
+    Route::post('/violation-report/{id}', ['as' => 'report.user', 'uses' => 'Admin\CustomerController@postReportUser']);
+
+
     Route::get('/convert-point-to-like-nice/{point}', function($point){
         $id = Auth::User()->id;
         $message = Auth::user()->point;
@@ -136,7 +159,7 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
             $data->point = $message - $point;
             $data->nice = $like + $point;
             $data->save();
-            return redirect('/users/points')->with('success', '成功した');
+            return redirect('/users/points')->with('success', '私は成功する');
         }
     });
     Route::group(['prefix' => 'messages'], function() {
@@ -164,6 +187,15 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
         });
         Route::get('/favorites', function(){
             return view('/outcomming/favorites');
+        });
+        Route::get('/favorites/{id}', function($id){
+            return redirect('/users/'.$id.'/view-profile')->with('success','お気に入りに追加しました');
+        });
+        Route::get('/blocks-user/{id}/{value}', function($id, $value){
+            return redirect('/users/'.$id.'/view-profile')->with('success','ブロックしました');
+        });
+        Route::get('/blocks/{id}', function($id){
+            return redirect('/users/'.$id.'/view-profile')->with('outcomming','true');
         });
     });
     Route::group(['prefix' => 'notices'], function() {
@@ -385,6 +417,7 @@ Route::group(['middleware' => 'end.user', 'prefix' => 'users'], function() {
         Route::post('/notify-setting', ['as' => 'notify.setting', 'uses' => 'Admin\HomeController@postNotifySetting']);
         Route::post('/message-template', ['as' => 'message.template', 'uses' => 'Admin\HomeController@postMessageTemplate']);
     });
+
     Route::post('/profile/comment/edit', ['as' => 'profile.comment.edit', 'uses' => 'Admin\HomeController@postProfileCommentEdit']);
     Route::post('/invitation/new-status', ['as' => 'users.invitation', 'uses' => 'Admin\HomeController@getInvationUser']);
     Route::post('/search', ['as' => 'user.search', 'uses' => 'Admin\HomeController@postSearch']);

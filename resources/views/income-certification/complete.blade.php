@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 所得証明')
+@section('title', 'Sweet Honeys - 所得証明')
 @section('content')
 <div class="wrap-container">
     <div class="header-tabs header-income-certification mt-2"> 

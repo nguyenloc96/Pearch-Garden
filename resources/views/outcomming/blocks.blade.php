@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - ブロックリスト')
+@section('title', 'Sweet Honeys - ブロックリスト')
 @section('content')
 <div class="wrap-container">
     <section class="page page-block">

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - メッセージ非表示リスト')
+@section('title', 'Sweet Honeys - メッセージ非表示リスト')
 @section('content')
 <div class="wrap-container">
     <section class="page page-block">

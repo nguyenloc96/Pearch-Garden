@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 所得証明')
+@section('title', 'Sweet Honeys - 所得証明')
 @section('content')
 <div class="wrap-container">
     <div class="header-tabs header-income-certification mt-2"> 
@@ -87,8 +87,7 @@
                 };
                 reader.readAsDataURL(fileImage.files[0]);
             }
-
-           $('#submit-btn').removeClass('prov-begin-link');
+            $('#submit-btn').removeClass('prov-begin-link');
             $('#submit-btn').addClass('prov-confirm');
         }
         function submitForm(){

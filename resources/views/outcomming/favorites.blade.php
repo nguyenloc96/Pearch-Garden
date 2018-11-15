@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - お気に入り')
+@section('title', 'Sweet Honeys - お気に入り')
 @section('content')
 <div class="wrap-container page-notices">
     <div class="header-tabs header-income-certification header-notices mt-2"> 

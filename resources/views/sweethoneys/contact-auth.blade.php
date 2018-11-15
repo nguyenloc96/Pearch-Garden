@@ -6,7 +6,7 @@
         <div class="header-tabs">
             <ul>
                 <li class="header-tabs-item header-tabs-item-with-arrow">
-                    <a class="header-tabs-back" href="/users/configurations"></a>
+                    <a class="header-tabs-back" href="/users/configuration"></a>
                     <h3>お問い合わせ</h3>
                 </li>
             </ul>

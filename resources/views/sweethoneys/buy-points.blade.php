@@ -45,8 +45,8 @@
                     <p>1ポイントを「1いいね！」に交換可能！</p>
                 </div>
                 <div class="p-point-content">
-                    <img src="/assets/image/point01.png" width="33%">
-                    <img src="/assets/image/right.png" width="10%">
+                    <img src="/assets/image/point01.png" width="33%" id="img-point-1">
+                    <img src="/assets/image/right.png" width="10%" id="img-point-2">
                     <img src="/assets/image/like.png" width="36%" class="mt-1">
                 </div>
 

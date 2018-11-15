@@ -35,7 +35,7 @@
             <section class="page-ftr page-signup-ftr">
                 <div class="page-signup-ftr-signup">
                     <p>
-                        アカウントをお持ちでない場合<a href="//sweethoneys/sign-up"> 登録はこちら </a>
+                        アカウントをお持ちでない場合<a href="/sweethoneys/sign-up"> 登録はこちら </a>
                     </p>
                 </div>
             </section>

@@ -65,8 +65,8 @@
             </ul>
         </div>
         <div class="caution-txt">
-            <p>※patersポイントは、購入ポイントであるか付与ポイントであ<br>るかに関わらず古いものから順に使用されます。</p>
-            <p>※patersポイント履歴に最新の情報が反映されるまで<br>数分かかる場合がございます。</p>
+            <p>※ Sweet Honeys ポイントは、購入ポイントであるか付与ポイントであ<br>るかに関わらず古いものから順に使用されます。</p>
+            <p>※ Sweet Honeys ポイント履歴に最新の情報が反映されるまで<br>数分かかる場合がございます。</p>
         </div>
         <div class="privacy-link">
             <a href="/sweethoneys/terms">利用規約</a>

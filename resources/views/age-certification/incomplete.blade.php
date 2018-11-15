@@ -14,7 +14,7 @@
         <div class="page-age-mv">
             <p class="page-age-mv-img"></p>
             <p class="page-age-mv-head">
-                関連法規に基づき、patersでは他の会員様との<br>
+                関連法規に基づき、Sweet Honeys では他の会員様との<br>
                 メッセージのやりとりが可能になる前に、<br>
                 年齢確認を必須としています。
             </p>
@@ -127,7 +127,7 @@
                 <img class="page-age-attention-icon" src="/assets/image/alert2@3x.png" alt="Alert2@3x" />
                 <p class="page-age-attention-title">年齢確認の前に</p>
                 <p class="page-age-attention-txt">
-                    ご登録いただいた生年月日と、提出された年齢確認書類の生年月日が一致しない場合は承認されず、paters上でのメッセージのやりとりが始められませんので、ご注意ください。
+                    ご登録いただいた生年月日と、提出された年齢確認書類の生年月日が一致しない場合は承認されず、Sweet Honeys 上でのメッセージのやりとりが始められませんので、ご注意ください。
                 </p>
                 <p class="page-age-attention-link">
                     <a href="/users/me/profile/birthday/edit">年齢を変更する(1回のみ)</a>

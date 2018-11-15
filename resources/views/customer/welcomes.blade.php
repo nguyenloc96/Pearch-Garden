@@ -31,15 +31,15 @@
                         <span class="error-text d-none">Facebook認証に失敗しました。</span>
                     </ul>
                     <p class="txt-ftr">
-                        patersが許可なくFacebookに投稿したり、友だちの<br>
-                        フィードにpatersを利用していることは表示されません。
+                        Sweet Honeys が許可なくFacebookに投稿したり、友だちの<br>
+                        フィードに Sweet Honeys を利用していることは表示されません。
                     </p>
                 </div>
             </section>
             <section class="page-footer page-signup-footer">
                 <div class="page-signup-footer-login">
                     <p class="txt-head">
-                        登録すると同時に私はpatersの利用規約と<br>
+                        登録すると同時に私は Sweet Honeys の利用規約と<br>
                         <a href="/sweethoneys/privacy">プライバシーポリシー</a>に同意します。
                     </p>
                     <p class="txt-btn">アカウントをお持ちの場合は、こちらから<a href="/sweethoneys/sign-in">ログイン</a></p>

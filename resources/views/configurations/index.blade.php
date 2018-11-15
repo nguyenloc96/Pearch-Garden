@@ -11,16 +11,6 @@
                 </li>
             </ul>
         </div>
-        @if(!is_null(Session::get('success')))
-        <div class='col-sm-12'>
-            <div class='alert alert-success alert-dismissible'>
-                <button type="button" class="close" role="alert" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4>
-                    <i class="icon fa fa-check"></i>{!! Session::get('success') !!}.
-                </h4>
-            </div>
-        </div>
-        @endif
         <div class="page-content">
             <div class="form-inner">
                 <div class="page-setting-lists">
@@ -86,7 +76,7 @@
                     <h3>サポート</h3>
                     <ul>
                         <li>
-                            <a href="/sweethoneys/point-history">patersポイントの履歴</a>
+                            <a href="/sweethoneys/point-history">Sweet Honeys ポイントの履歴</a>
                         </li>
                         <li>
                             <a href="/sweethoneys/help">よくある質問</a>
@@ -118,12 +108,18 @@
                             <a href="/sweethoneys/settlement">資金決済法に基づく表示</a>
                         </li>
                         <li class="current">
-                            <a href="/users/sign-out"> patersからログアウトする </a>
+                            <a href="/users/sign-out"> Sweet Honeys からログアウトする </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <div class="profile-finish {{!is_null(Session::get('success')) ? '' : 'd-none'}}" onclick="$(this).fadeOut()">
+        <div class="profile-finish-inner">
+            <img src="/assets/image/check.png" alt="" class="profile-finish-check">
+            <p class="profile-finish-copy">保存しました</p>
+        </div>
+    </div>
 </div>
 @stop

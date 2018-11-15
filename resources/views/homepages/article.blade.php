@@ -2,7 +2,7 @@
     <div class="wrapper">
         <ul class="article-user-lists flex">
             <li class="article-user-list">
-                <a href="/users/profile">
+                <a href="users/1/view-profile">
                     <div class="article-user-list-thumb">
                         <figure class="">
                             <img src="/assets/image/profile-1.jpeg"/>
@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="article-user-list">
-                <a href="/users/profile">
+                <a href="users/6/view-profile">
                     <div class="article-user-list-thumb">
                         <figure class="">
                             <img src="/assets/image/profile-2.jpeg"/>
@@ -34,7 +34,7 @@
             </li>
             <li class="article-user-list">
                 <i class="tag-active"></i>
-                <a href="/users/profile">
+                <a href="users/7/view-profile">
                     <div class="article-user-list-thumb">
                         <figure class="">
                             <img src="/assets/image/female.png"/>
@@ -50,7 +50,7 @@
             </li>
             <li class="article-user-list">
                 <i class="tag-new"></i>
-                <a href="/users/profile">
+                <a href="/users/8/view-profile">
                     <div class="article-user-list-thumb">
                         <figure class="">
                             <img src="/assets/image/male_normal.png"/>

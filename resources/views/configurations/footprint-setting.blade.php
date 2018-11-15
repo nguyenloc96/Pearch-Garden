@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 足あと設定')
+@section('title', 'Sweet Honeys - 足あと設定')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-notice">

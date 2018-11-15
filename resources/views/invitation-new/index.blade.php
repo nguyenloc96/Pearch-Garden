@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 友人を招待')
+@section('title', 'Sweet Honeys - 友人を招待')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-fiend-invite">
@@ -19,7 +19,7 @@
                 <div class="desc">
                     <p>
                         <strong>友だちを招待で10ptゲット!!</strong>
-                        友だちがあなたの招待でpatersを利用し、招待コードを入力すると、あなたと友だち両方に10ptをプレゼントします。
+                        友だちがあなたの招待で Sweet Honeys を利用し、招待コードを入力すると、あなたと友だち両方に10ptをプレゼントします。
                     </p>
                     <p>
                         <strong>ポイントのご利用方法</strong>

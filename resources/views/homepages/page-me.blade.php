@@ -33,6 +33,8 @@
                     <li>
                         <strong>
                             <a class="link-color" href="/users/age-certification/incomplete">年齢未確認</a>
+                            <br>
+                            <a class="link-color" href="/sweethoneys/pay">無料会員</a>
                         </strong>
                         会員ステータス
                     </li>

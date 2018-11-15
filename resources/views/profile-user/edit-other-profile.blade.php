@@ -11,22 +11,22 @@
                 </li>
             </ul>
         </div>
-        <section class="input-section mt-sub10">
+        <section class="input-section mt-sub10" data-toggle="modal" data-target="#prof-job">
             <h3>職業</h3>
             <div class="input-area">
                 <p class="input-ttl">職種</p>
-                <div class="input-box select-box" data-toggle="modal" data-target="#prof-job">
+                <div class="input-box select-box">
                     <p class="status-txt">
                         {!! $data[0]->job == '' ? '...' : $data[0]->job !!}
                     </p>
                 </div>
             </div>
         </section>
-        <section class="input-section mt-sum10">
+        <section class="input-section mt-sum10" data-toggle="modal" data-target="#prof-request-until-meet">
             <h3>出会うまでの希望</h3>
             <div class="input-area">
                 <p class="input-ttl">出会うまでの希望</p>
-                <div class="input-box select-box" data-toggle="modal" data-target="#prof-request-until-meet">
+                <div class="input-box select-box">
                     <p class="status-txt">
                         {!! $data[0]->request_until_meet == '' ? '...' : $data[0]->request_until_meet !!}
                     </p>
@@ -35,16 +35,16 @@
         </section>
         <section class="input-section mt-sum10">
             <h3>性格・プライベート</h3>
-            <div class="input-area mh-55">
-                <p class="input-ttl">性格・タイプ</p>
-                <a href="/users/me/profile/select-personality">
+            <a href="/users/me/profile/select-personality">
+                <div class="input-area mh-55">
+                    <p class="input-ttl">性格・タイプ</p>
                     <div class="input-box select-box">
                         <p class="status-txt">
                             {!! $data[0]->personality == '' ? '...' : $data[0]->personality !!}
                         </p>
                     </div>
-                </a>  
-            </div>
+                </div>
+            </a>  
             <a href="/users/me/profile/hobby/edit">
                 <div class="input-area input-tag">
                     <p class="input-ttl">
@@ -75,25 +75,25 @@
                     </div>
                 </div>
             </a>
-            <div class="input-area">
+            <div class="input-area" data-toggle="modal" data-target="#prof-drinking-habit">
                 <p class="input-ttl">お酒</p>
-                <div class="input-box select-box" data-toggle="modal" data-target="#prof-drinking-habit">
+                <div class="input-box select-box">
                     <p class="status-txt">
                         {!! $data[0]->drinking_habit == '' ? '...' : $data[0]->drinking_habit !!}
                     </p>
                 </div>
             </div>
-            <div class="input-area">
+            <div class="input-area" data-toggle="modal" data-target="#prof-smoking-habit">
                 <p class="input-ttl">タバコ</p>
-                <div class="input-box select-box" data-toggle="modal" data-target="#prof-smoking-habit">
+                <div class="input-box select-box">
                     <p class="status-txt">
                         {!! $data[0]->smoking_habit == '' ? '...' : $data[0]->smoking_habit !!}
                     </p>
                 </div>
             </div>
-            <div class="input-area">
+            <div class="input-area"  data-toggle="modal" data-target="#prof-holiday">
                 <p class="input-ttl">休日</p>
-                <div class="input-box select-box" data-toggle="modal" data-target="#prof-holiday">
+                <div class="input-box select-box">
                     <p class="status-txt">
                         {!! $data[0]->holiday == '' ? '...' : $data[0]->holiday !!}
                     </p>

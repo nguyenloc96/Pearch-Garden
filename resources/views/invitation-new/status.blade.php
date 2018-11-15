@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'paters - 招待コード入力')
+@section('title', 'Sweet Honeys - 招待コード入力')
 @section('content')
 <div class="wrap-container">
     <section class="page page-setting page-setting-tel-sms">
@@ -18,7 +18,7 @@
                 <div class="form-inner">
                     <label class="form-group-label">
                         <strong>招待コードをお持ちの場合</strong>
-                        patersのご優待カードまたは招待コードをお持ちの方はこちらからご入力ください。
+                        Sweet Honeys のご優待カードまたは招待コードをお持ちの方はこちらからご入力ください。
                     </label>
                     <ul class="form-group-inviosn flex">
                         <li>
@@ -43,7 +43,7 @@
                             <span class="button-text">送信</span>
                         </button>            
                         <p>
-                            ※ご優待カードは、運営が発行した特別なカードです。招待コードは、既にpatersをご利用のご友人があなたを招待した際に入手が可能です。
+                            ※ご優待カードは、運営が発行した特別なカードです。招待コードは、既に Sweet Honeys をご利用のご友人があなたを招待した際に入手が可能です。
                         </p>
                     </div>
                 </div>
